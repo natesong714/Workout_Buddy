@@ -38,19 +38,16 @@ public class Questionnaire extends AppCompatActivity implements View.OnClickList
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gobacktohome();
+                go_to_advanced();
             }
         });
 
     }
 
-    private void gobacktohome() {
+    private void go_to_advanced() {
         if(check) {
-            Intent newIntent = new Intent(Questionnaire.this, HomeActivity.class);
+            Intent newIntent = new Intent(Questionnaire.this, Advanced_Workout.class);
             startActivity(newIntent);
-        }
-        else {
-            Log.d("something broke", "wtf");
         }
     }
 
@@ -58,7 +55,7 @@ public class Questionnaire extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.backBtn:
-                gobacktohome();
+                go_to_advanced();
 
         }
     }
