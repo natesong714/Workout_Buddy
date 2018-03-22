@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cs175group1.workout_buddy.LoginScreen">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:inputType="textEmailAddress"
+                    android:hint="E-Mail"
+                    android:ems="10"
+                    android:layout_alignStart="@+id/passwordTxt"
+                    android:layout_alignLeft="@+id/passwordTxt"
+                    android:layout_above="@+id/passwordTxt"
+                    android:id="@+id/emailTxt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:ems="10"
+                    android:layout_above="@+id/loginBtn"
+                    android:id="@+id/passwordTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/emailTxt"
+                    android:layout_marginBottom="42dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/loginBtn"
+                    android:layout_marginBottom="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Log In"
+                    android:background="#4863A0"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/signupBtn"
+                    android:layout_marginBottom="35dp"
+                    android:text="Sign up for free"
+                    android:background="#3090C7"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
