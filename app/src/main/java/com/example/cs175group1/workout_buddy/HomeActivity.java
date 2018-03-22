@@ -55,7 +55,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void go_to_workout() {
         if(flag) {
-            Intent newIntent = new Intent(HomeActivity.this, Questionnaire.class);
+            Intent newIntent = new Intent(HomeActivity.this, Beginner_Workout.class);
             startActivity(newIntent);
         }
         else {
